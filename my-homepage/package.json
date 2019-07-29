@@ -2,7 +2,7 @@
   "name": "my-homepage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://eddie0329.github.io/",
+  "homepage": "https://eddie0329.github.io/eddie0329.github.io",
   "dependencies": {
     "antd": "^3.20.6",
     "gh-pages": "^2.0.1",
