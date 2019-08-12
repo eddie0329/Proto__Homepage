@@ -1,4 +1,5 @@
-.MyBook {
+
+.SeoulRouteMaker_MyBook {
   width: 325px;
   height: 330px;
   background: white;
@@ -10,19 +11,18 @@
   margin-top: 116px;
 }
 
-.Cover {
+.SeoulRouteMaker_Cover {
   width: 300px;
   height: 100%;
   position: absolute;
   left: 25px;
-  background: yellow;
   transform: rotateY(0deg);
   transform-style: preserve-3d;
   transform-origin: left;
   transition: all 0.5s ease-in;
 }
 
-.MyBook:hover .Cover{
+.SeoulRouteMaker_MyBook:hover .SeoulRouteMaker_Cover{
   transform: rotateY(-180deg);
 }
 
@@ -35,11 +35,12 @@ figure {
   backface-visibility: hidden;
 }
 
-figure.front{
-  background: red;
+figure.SeoulRouteMaker_front{
+  background-image: url("./images/SeoulRouteMaker.jpg");
+  background-repeat: round;
 }
 
-figure.back{
-  background: green;
+figure.SeoulRouteMaker_back{
+  background: #ffa20d;
   transform: rotateY(180deg);
 }

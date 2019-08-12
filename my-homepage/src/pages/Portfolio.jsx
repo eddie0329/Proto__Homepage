@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import { Row, Col } from "antd";
+import { Row, Col, Layout } from "antd";
 import Menu from "../components/Menu";
 import Logo from "../components/Logo";
 import styled from "styled-components";
 import MyBook from "../components/BookSample";
 import BookShelf from "../images/Bookshelf.png";
+import SeoulRouteMaker from "../components/Portfolios/SeoulRouteMaker/SeoulRouteMaker";
 
+const { Footer } = Layout;
 
 const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
   margin-top: 1px;
@@ -25,7 +27,7 @@ export class Portfolio extends Component {
       <Row
         type="flex"
         align="middle"
-        style={{ background: "#0a262e", height: "100vh" }}
+        style={{ background: "#0a262e", height: "1120px" }}
       >
         <Col span={24} style={{ textAlign: "center" }}>
           <Logo />
@@ -36,17 +38,13 @@ export class Portfolio extends Component {
             type="flex"
             style={{
               width: "1400px",
-              height: "350px",
-              // backgroundColor: "black"
+              height: "350px"
             }}
           >
-            <Col span={8}>
-              <MyBook/>
+            <Col span={12}>
+              <SeoulRouteMaker />
             </Col>
-            <Col span={8}>
-              <MyBook />
-            </Col>
-            <Col span={8}>
+            <Col span={12}>
               <MyBook />
             </Col>
             <Row
@@ -54,15 +52,27 @@ export class Portfolio extends Component {
               align="top"
               style={{
                 width: "1400px",
-                height: "0px",
+                height: "0px"
               }}
             >
               <Col span={24}>
-                <img src={BookShelf} style={{width: "2880px", height: "500px", marginLeft: "-180px"}}/>
+                <img
+                  src={BookShelf}
+                  style={{
+                    width: "2880px",
+                    height: "500px",
+                    marginLeft: "-180px"
+                  }}
+                />
               </Col>
             </Row>
           </Row>
         </Contents>
+        <Col span={24}>
+          <Footer style={{ textAlign: "center", background: "#0a262e" }}>
+            Eddie Sunny Design ©2019 Created by Eddie Sunny
+          </Footer>
+        </Col>
       </Row>
     );
   }
