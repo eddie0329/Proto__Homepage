@@ -4,6 +4,9 @@ import Map_Picture from "./images/Map.png";
 import Use_Case_Diagram from "./images/use_case.png";
 import Logical_Architect from "./images/Logical.png";
 import Physical_Architect from "./images/Physical.png";
+import Login from "./images/Login.png";
+import Main from "./images/Main.png";
+import SignUp from "./images/Signup.png";
 import { Table } from "antd";
 
 const dataSource = [
