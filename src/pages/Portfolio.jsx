@@ -3,7 +3,7 @@ import { Row, Col, Layout } from "antd";
 import Menu from "../components/Menu";
 import Logo from "../components/Logo";
 import styled from "styled-components";
-import MyBook from "../components/BookSample";
+import Money from "../components/Portfolios/Money vs Happiness among marriage/MoneyCover ";
 import BookShelf from "../images/Bookshelf.png";
 import SeoulRouteMaker from "../components/Portfolios/SeoulRouteMaker/SeoulRouteMaker";
 
@@ -45,7 +45,7 @@ export class Portfolio extends Component {
               <SeoulRouteMaker />
             </Col>
             <Col span={12}>
-              <MyBook />
+              <Money />
             </Col>
             <Row
               type="flex"

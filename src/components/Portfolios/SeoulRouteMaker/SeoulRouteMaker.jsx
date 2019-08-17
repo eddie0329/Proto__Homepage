@@ -25,6 +25,7 @@ export class SeoulRouteMaker extends Component {
           url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
         </style>
         <div className="SeoulRouteMaker_MyBook">
+          {/* edge */}
           <div
             style={{
               position: "absolute",
@@ -33,6 +34,8 @@ export class SeoulRouteMaker extends Component {
               background: "#3f693f"
             }}
           />
+
+          {/* more button */}
           <Button
             onClick={() => this.setModal2Visible(true)}
             style={{
@@ -43,6 +46,8 @@ export class SeoulRouteMaker extends Component {
           >
             more
           </Button>
+
+          {/* popup dialog */}
           <Modal
             title="Seoul Route Maker 2018/12/02"
             centered
@@ -54,6 +59,8 @@ export class SeoulRouteMaker extends Component {
           >
             <SeoulRouteMakerContent />
           </Modal>
+
+          {/* inside title */}
           <div
             style={{
               position: "absolute",
@@ -64,6 +71,8 @@ export class SeoulRouteMaker extends Component {
           >
             Seoul Route Maker
           </div>
+
+          {/* contents */}
           <div
             style={{
               position: "absolute",
@@ -72,14 +81,15 @@ export class SeoulRouteMaker extends Component {
             }}
           >
             <p>
-              &nbsp;&nbsp;&nbsp;This Project is ought to design for the people
-              who want to explore extra-ordinary places, which are either
-              familiar or unfamiliar region. It will satisfy both tourists and
-              people, who are not live within the area of Seoul.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This Project is ought to design for
+              the people who want to explore extra-ordinary places, which are
+              either familiar or unfamiliar region. It will satisfy both
+              tourists and people, who are not live within the area of Seoul.
             </p>
           </div>
           <div className="SeoulRouteMaker_Cover">
             <figure className="SeoulRouteMaker_front">
+              {/* title */}
               <h1
                 style={{
                   fontWeight: "bold",
@@ -92,9 +102,18 @@ export class SeoulRouteMaker extends Component {
               >
                 Seoul Route Maker
               </h1>
-              <h4 style={{color: "#696b69", marginTop: "40px", marginLeft: "60px", fontWeight: "bold"}}>-DataBase Team Project-</h4>
+              <h4
+                style={{
+                  color: "#696b69",
+                  marginTop: "40px",
+                  marginLeft: "60px",
+                  fontWeight: "bold"
+                }}
+              >
+                -DataBase Team Project-
+              </h4>
             </figure>
-            <figure className="SeoulRouteMaker_back"> back </figure>
+            <figure className="SeoulRouteMaker_back" />
           </div>
         </div>
       </>
